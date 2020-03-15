@@ -13,6 +13,8 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: ${STYLE.BODY_COLOR};
+    font-family: 'Baloo Chettan 2', cursive;
+    color: ${STYLE.SECONDARY_COLOR};
   }
 `;
 

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import STYLE from '../../constants/style';
 
-const StyledNav = styled.nav`
+const StyledNav = styled.div`
   position: fixed;
   left: 0;
   top: 0;
@@ -13,7 +13,11 @@ const StyledNav = styled.nav`
 
 class Sidebar extends React.PureComponent {
   render() {
-    return <StyledNav></StyledNav>;
+    return (
+      <StyledNav>
+        <div>Siva</div>
+      </StyledNav>
+    );
   }
 }
 
