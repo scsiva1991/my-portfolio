@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import STYLE from '../../constants/style';
+import Menu from './Menu';
 
 const StyledNav = styled.div`
   position: fixed;
@@ -11,14 +12,15 @@ const StyledNav = styled.div`
   background-color: ${STYLE.NAVBAR_BG};
 `;
 
-class Sidebar extends React.PureComponent {
-  render() {
-    return (
-      <StyledNav>
-        <div>Siva</div>
-      </StyledNav>
-    );
-  }
-}
+type SidebarProps = {};
+
+const Sidebar: React.FunctionComponent<SidebarProps> = () => {
+  return (
+    <StyledNav>
+      <div>Siva</div>
+      <Menu />
+    </StyledNav>
+  );
+};
 
 export default Sidebar;
